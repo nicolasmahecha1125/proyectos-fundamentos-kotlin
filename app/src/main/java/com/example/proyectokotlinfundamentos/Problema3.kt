@@ -16,38 +16,17 @@ fun problema3() {
     val asignarura = readln()
     println("Ingresa nota primer corte:")
     val nota1 = readln().toFloat()
-    var n1 = nota1
-    if (nota1>0.0f){
-        n1 *= 0.33f
-    }else{
-        println("numero no valido")
-    }
+
     println("Ingresa nota segundo corte:")
     val nota2 = readln().toFloat()
-    var n2 = nota2
-    if (nota2>0.0f){
-        n2 *= 0.33f
-    }else{
-        println("numero no valido")
-    }
+
     println("Ingresa nota tercer corte:")
     val nota3 = readln().toFloat()
-    var n3 = nota3
-    if (nota3>0.0f){
-        n3*= 0.34f
-    }else{
-        println("numero no valido")
-    }
-    val notafinal = n1+n2+n3
 
+    val notafinal = (nota1*0.33+nota2*0.33+nota3*0.34).toFloat()
 
-    if(nota1 == 3.1f && nota2 == 2.8f && nota3 == 4.3f){
-        println("Asignatura: $asignarura")
-        println("Definitiva: %.3f".format(notafinal).replace(",","."))
-    }else{
-        println("Asignatura: $asignarura")
-        println("Definitiva: %.1f".format(notafinal).replace(",","."))
-    }
+    println("Asignatura: $asignarura")
+    println("Definitiva: $notafinal")
 
 
 }

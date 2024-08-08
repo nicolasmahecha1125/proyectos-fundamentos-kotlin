@@ -19,13 +19,9 @@ fun problema16() {
     println("k:")
     var k = readln().toInt()
     var num = n*m
-    var num1 = n+m
-    if (num%k==0  || k%n==0 || num1%k==0){
-        if (n==1 && m==1 && k==2){
-            println("NO")
-        }else{
-            println("SÍ")
-        }
+
+    if ((num%k==0 || k%n==0 || k%m==0) && num>k) {
+        println("SÍ")
     }else{
         println("NO")
     }

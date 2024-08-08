@@ -23,5 +23,4 @@ fun problema9() {
         println("Aburrido!")
     }
 
-
 }
